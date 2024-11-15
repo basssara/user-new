@@ -35,7 +35,7 @@ pipeline {
 
                 echo 'Starting Docker container...'
                 
-                sh 'docker run -d --env-file=$ENV_FILE -p ${PORT}:${PORT} --name ${DOCKER_IMAGE} ${DOCKER_IMAGE}:latest'
+                sh 'docker run -d --env-file=$ENV_FILE --name ${DOCKER_IMAGE} ${DOCKER_IMAGE}:latest'
                 }
             }
         }
